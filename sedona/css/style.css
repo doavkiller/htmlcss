@@ -1,0 +1,16 @@
+
+
+
+.footer-social__item {
+        background-color: #000000;
+        width: 100px;
+        height: 100px;
+    }
+
+.footer-social__icon:hover {
+    fill: #444444;
+}
+
+.footer-source__img {
+    fill: #911111;
+}

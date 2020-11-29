@@ -26,66 +26,65 @@
         </header>
         <main class="content">
             <section class="selection-setings">
-<form class="selection-setings__forms">
-                <fieldset class="infrastructure">
-                    <legend>Инфраструктура:</legend>
-                    <p>
-                        <label>
-                            <input type="checkbox" name="" value="" checked>Басейн</label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="checkbox" name="" value="">Парковка</label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="checkbox" name="" value="">Wi-fi</label>
-                    </p>
-                </fieldset>
-                <fieldset class="house">
-                    <legend>Тип жилья:</legend>
-                    <p>
-                        <label>
-                            <input type="checkbox" name="" value="" checked>Басейн</label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="checkbox" name="" value="" checked>Парковка</label>
-                    </p>
-                    <p>
-                        <label>
-                            <input type="checkbox" name="" value="" checked>Wi-fi</label>
-                    </p>
-                </fieldset>
+                <h2 class="visibiality-hidden">Параметры поиска отеля</h2>
+                <form class="selection-setings__form">
+                    <fieldset class="checkboxs infrastructure">
+                        <legend class="checkboxs__title">Инфраструктура:</legend>
+                        <p class="checkboxs__iner">
+                            <label class="checkboxs__label">
+                                <input type="checkbox" class="checkboxs__checkbox" name="checkboxs__checkbox" value="Basin" checked>Басейн</label>
+                        </p>
+                        <p class="checkboxs__iner">
+                            <label class="checkboxs__label">
+                                <input type="checkbox" class="checkboxs__checkbox" name="checkboxs__checkbox" value="parking">Парковка</label>
+                        </p>
+                        <p class="checkboxs__iner">
+                            <label class="checkboxs__label">
+                                <input type="checkbox" class="checkboxs__checkbox" name="checkboxs__checkbox" value="wifi">Wi-fi</label>
+                        </p>
+                    </fieldset>
+                    <fieldset class="checkboxs house">
+                        <legend class="checkboxs__title">Тип жилья:</legend>
+                        <p class="checkboxs__iner">
+                            <label class="checkboxs__label">
+                                <input type="checkbox" class="checkboxs__checkbox" name="checkboxs__checkbox" value="hotel" checked>Гостиница</label>
+                        </p>
+                        <p class="checkboxs__iner">
+                            <label class="checkboxs__label">
+                                <input type="checkbox" class="checkboxs__checkbox" name="checkboxs__checkbox" value="motel" checked>Мотель</label>
+                        </p>
+                        <p class="checkboxs__iner">
+                            <label class="checkboxs__label">
+                                <input type="checkbox" class="checkboxs__checkbox" name="checkboxs__checkbox" value="apartments" checked>Апартаменты</label>
+                        </p>
+                    </fieldset>
 
-                <fieldset>
-                    <legend class="selection-cost__title">Стоимость в сутки (Р):</legend>
-                    <label class="selection-cost__parametr">от 0</label>
-                    <label class="selection-cost__parametr">До 3000</label>
-                    <!-- <input type="range">
-                    <input type="range">
-                    <img src="img\filter-button.svg" alt="минимум">
-                    <img src="img\filter-button.svg" alt="максимум"> -->
-                    <div class="selection-cost__inner"><img src="img/price-slider.svg" class="selection-cost__svg" alt="выбор минимальной и максимальной цены"></div>
-                </fieldset>
-                <button >Показать</button>
-            </form>
+                    <fieldset class ="selection-cost">
+                        <legend class="selection-cost__title">Стоимость в сутки (Р):</legend>
+                        <label class="selection-cost__parametr">от 0</label>
+                        <label class="selection-cost__parametr">До 3000</label>
+                        <div class="selection-cost__inner"><img src="img/price-slider.svg" width="316" height="21" class="selection-cost__svg"
+                                alt="выбор минимальной и максимальной цены"></div>
+                    </fieldset>
+                    <button class="selection-setings__btn" type="submit">Показать</button>
+                </form>
             </section>
             <section class="selection-sorting">
                 <p class="selection-sorting__amount">Найдено: 3</p>
                 <h2 class="selection-sorting__title">Сортировка:</h2>
                 <ul class="selection-sorting__list">
-                    <li class="selection-sorting__item selection-sorting__price">По цене</li>
-                    <li class="selection-sorting__item selection-sorting__type">По типу</li>
-                    <li class="selection-sorting__item selection-sorting__rating">По рейтингу</li>
+                    <li class="selection-sorting__item selection-sorting__price"><button class="selection-sorting__btn active">По цене</button></li>
+                    <li class="selection-sorting__item selection-sorting__type"><button class="selection-sorting__btn">По типу</button></li>
+                    <li class="selection-sorting__item selection-sorting__rating"><button class="selection-sorting__btn">По рейтингу</button></li>
                 </ul>
-                <div class="selection-sorting__control">
-                    <svg width="11" height="10" viewBox="0 0 11 10" fill="#CACACA" xmlns="http://www.w3.org/2000/svg">
+                <div class="selection-sorting__control sorting-control">
+                    <button class="sorting-control__btn">
+                    <svg width="11" height="10" class="sorting-control__svg" viewBox="0 0 11 10" fill="#CACACA" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.5 0L0 10H11L5.5 0Z" />
-                    </svg>
-                    <svg width="11" height="10" viewBox="0 0 11 10" fill="#CACACA" xmlns="http://www.w3.org/2000/svg">
+                    </svg></button>
+                    <button class="sorting-control__btn"><svg width="11" height="10" class="sorting-control__svg" viewBox="0 0 11 10" fill="#CACACA" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5.5 0L0 10H11L5.5 0Z" />
-                    </svg>
+                    </svg></button>
 
 
                 </div>
@@ -103,10 +102,10 @@
                                     class="found-hotel__reservation">Забронировать</a></div>
                         </div>
                         <div class="found-hotel__rating hotel-rating">
-                            <img src="img/star.svg" alt="">
-                            <img src="img/star.svg" alt="">
-                            <img src="img/star.svg" alt="">
-                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="" width="19" height="17">
+                            <img src="img/star.svg" alt="" width="19" height="17">
+                            <img src="img/star.svg" alt="" width="19" height="17">
+                            <img src="img/star.svg" alt="" width="19" height="17">
                             <p class="hotel-rating__text">Рейтинг: 8,5</p>
                         </div>
 
@@ -122,9 +121,9 @@
                                     class="found-hotel__reservation">Забронировать</a></div>
                         </div>
                         <div class="found-hotel__rating hotel-rating">
-                            <img src="img/star.svg" alt="">
-                            <img src="img/star.svg" alt="">
-                            <img src="img/star.svg" alt="">
+                            <img src="img/star.svg" alt="" width="19" height="17">
+                            <img src="img/star.svg" alt="" width="19" height="17">
+                            <img src="img/star.svg" alt="" width="19" height="17">
                             <p class="hotel-rating__text">Рейтинг: 8,9</p>
                         </div>
                     </li>
@@ -138,22 +137,26 @@
                             <div class="found-hotel__links"><a href="blank.html"
                                     class="found-hotel__details">Подробнее</a><a href="blank.html"
                                     class="found-hotel__reservation">Забронировать</a></div>
-                            <div class="found-hotel__rating hotel-rating">
-                                <img src="img/star.svg" alt="">
-                                <img src="img/star.svg" alt="">
+                        </div>>
+                        <div class="found-hotel__rating hotel-rating">
+                            <img src="img/star.svg" alt="" width="19" height="17">
+                            <img src="img/star.svg" alt="" width="19" height="17">
 
-                                <p class="hotel-rating__text">Рейтинг: 9,2</p>
-                            </div>
+                            <p class="hotel-rating__text">Рейтинг: 9,2</p>
+                        </div>
+
                     </li>
                 </ul>
             </section>
         </main>
         <footer class="footer">
             <section class="footer-contacts">
+                <h3 class="visibiality-hidden">Контакты</h3>
                 <p class="footer-contact__telegram">#visitSEDONA</p>
                 <a class="footer-contact__phone" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
             </section>
             <section class="footer-social">
+                <h3 class="visibiality-hidden">Соцсети</h3>
                 <ul class="footer-social__list">
                     <li class="footer-social__item"><a href="blank.html" class="footer-social__link"><svg width="17"
                                 height="17" class="footer-social__icon" fill="#fff" xmlns="http://www.w3.org/2000/svg">
@@ -171,6 +174,7 @@
                 </ul>
             </section>
             <section class="footer-source">
+                <h3 class="visibiality-hidden">Логотип</h3>
                 <a href="blank.html" class="footer-source__link">
                     <p class="footer-source__text">Website by</p>
                     <svg width="115" height="41" class="footer-source__svg" fill="#231F20"
